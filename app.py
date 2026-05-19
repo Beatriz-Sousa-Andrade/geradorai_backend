@@ -76,12 +76,24 @@ def generate():
         # Converte a string JSON em Dicionário Python para o Flask organizar a resposta
         receita_estruturada = json.loads(receita_json_string)
         
+        
+        if receita_estruturada.get("nome_da_receita") == "ERRO_INGREDIENTE_INVALIDO":
+            return jsonify({
+                "status": "error",
+                "message": "❌ Ingrediente(s) inválido(s) ou não comestível(is) detectado(s). Use apenas alimentos, temperos ou ingredientes culinários reais."
+            }), 400
+        
+
+
         return jsonify({
             "status": "success",
             "ingredientes_enviados": ingredientes,
             "dados_receita": receita_estruturada
         }), 200
         
+
+    
+
     except Exception as e:
         return jsonify({
             "status": "error",
