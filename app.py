@@ -34,6 +34,7 @@ def generate_recipe(ingredientes):
             system_instruction=SYSTEM_INSTRUCTION,
             response_mime_type="application/json", # Força a saída em formato JSON
             response_schema=RECEITA_SCHEMA,       # Segue o esquema do config.py
+            temperature=0.7
         )
     )
     return response.text
