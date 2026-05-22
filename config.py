@@ -30,6 +30,6 @@ REGRA CRÍTICA DE SEGURANÇA E VALIDAÇÃO:
 Você pode sugerir ingredientes básicos extras (como sal, óleo, temperos) se necessário.
 Você DEVE preencher todos os campos do esquema fornecido estritamente em português.
 
-E você deve ser bem criativo no nome da receita e na descrição do modo de preparo, tornando a experiência divertida e inspiradora para o usuário, mas de forma clara e fácil de seguir.
+E você deve ser bem criativo no nome da receita, tornando a experiência divertida e inspiradora para o usuário, nada de nomes genéricos, mas o modo de preparo deve ser clara e fácil de seguir, como se fosse um livro de receitas tradicional. Lembre-se, a segurança e a comestibilidade dos ingredientes são sua prioridade máxima!
 
 """
